@@ -1,5 +1,7 @@
 # 投资 X Buddy
 
+源码分支：https://github.com/1328lct/investment-x-buddy/tree/x-buddy 。主分支已与其他 Lovable 项目关联，本题独立部署时请选择 x-buddy 分支。
+
 题目13「投资 X Buddy」的独立中文 Web 应用。面向需要保留过程、核验证据、随时中断与恢复的投资研究者。与 AlphaRadar、MarketScope 使用独立目录和应用状态。
 
 > **当前是可运行的 Agent Harness DEMO**，不是已接入真实模型或实时行情的研究服务。所有数值为合成数据；规划与报告使用透明规则。没有真实金融 API、LLM、交易、外发或费用发生。请勿把合成样本结论用于真实投资。
@@ -87,7 +89,7 @@ node --test tests/*.test.mjs
 
 ## 部署
 
-静态托管根目录指向 `dist/`；相对资源路径支持 GitHub Pages 项目子目录。仓库已提供根目录 index.html 跳转到 dist/，并包含 .nojekyll；GitHub Pages 可直接选择 main 分支和 /(root)。测试命令见上文；无需 build。公开 URL 和仓库状态以 `DELIVERY_STATUS.md` 的实际记录为准，未验证地址不得视为交付。
+静态托管根目录指向 `dist/`；相对资源路径支持 GitHub Pages 项目子目录。仓库已提供根目录 index.html 跳转到 dist/，并包含 .nojekyll；GitHub Pages 可直接选择 x-buddy 分支和 /(root)。测试命令见上文；无需 build。公开 URL 和仓库状态以 `DELIVERY_STATUS.md` 的实际记录为准，未验证地址不得视为交付。
 
 ## 已知边界与未做事项
 
