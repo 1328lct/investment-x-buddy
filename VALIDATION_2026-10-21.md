@@ -6,10 +6,10 @@
 
 | 验证项 | 命令 | 结果 | 证据文件 |
 |---|---|---|---|
-| 单元测试 | `bunx vitest run` | **16/16 通过**，exit=0 | `docs/validation/vitest_2026-10-21.log` |
-| 类型检查 | `npx tsgo --noEmit` | **无错误**，exit=0 | `docs/validation/typecheck_2026-10-21.log` |
+| 单元测试 | `bunx vitest run` | **16/16 通过**，exit=0 | `docs/validation/vitest_2026-10-21.txt` |
+| 类型检查 | `npx tsgo --noEmit` | **无错误**，exit=0 | `docs/validation/typecheck_2026-10-21.txt` |
 | 生产构建 | 平台自动构建 | **build OK**（2026-10-21T03:41:15Z） | 平台构建日志 |
-| 端到端验收 | `python3 scripts/acceptance_e2e.py` | 全部输出符合预期，pageerror=0，exit=0 | `docs/validation/e2e_2026-10-21.log` |
+| 端到端验收 | `python3 scripts/acceptance_e2e.py` | 全部输出符合预期，pageerror=0，exit=0 | `docs/validation/e2e_2026-10-21.txt` |
 | 主链路录像 | `docs/validation/record_demo_2026-10-21.py` | **70.6 秒**，0 页面错误 | `public/demo/AlphaRadar_demo.mp4` |
 
 ### 端到端脚本输出（如实说明）
@@ -58,3 +58,12 @@ errs []
 - 真实数据源（扶摇 / iFinD MCP）未接入，全部数值为 DEMO 合成数据。
 - 长时间运行稳定性未验证。
 - 运行模式仍为**仅浏览器演示模式，非 24h 后台调度**；系统不提供任何买卖建议。
+
+
+## 补充：公开 Web 与最终交付
+
+2026-10-21 已通过 Chrome 实际完成公开站创建、8步模拟、通知去重、规则v2与刷新持久化检查，见 [公开Web验收](docs/validation/public_web_2026-10-21.md)。这属于人工主链路验收，不是自动化全量回归。
+
+公开仓库：https://github.com/1328lct/investment-x-buddy 。源码为手动导出同步，未建立Lovable双向自动同步。
+
+演示MP4为70.6秒、3,126,021字节。提交包包含本地文件；也可从 [仓库视频](https://github.com/1328lct/investment-x-buddy/blob/main/public/demo/AlphaRadar_demo.mp4) 下载。公开站视频路径未通过Chrome播放验证，不应只提交该路径。

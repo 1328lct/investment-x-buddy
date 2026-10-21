@@ -114,3 +114,12 @@ bun run build      # 生产构建
 ## 10. 演示视频
 
 主链路实际录屏（70.6 秒，2026-10-21 录制）：[`/demo/AlphaRadar_demo.mp4`](./public/demo/AlphaRadar_demo.mp4)，部署后可通过 `<站点URL>/demo/AlphaRadar_demo.mp4` 下载。内容：概览 → 新建任务（解析→校验→二次确认）→ 模拟完整生命周期 → 通知中心去重 → 版本 v2 → 可解释性 → 数据源。SHA256 见 VALIDATION_2026-10-21.md。
+
+
+## 补充：公开 Web 与最终交付
+
+2026-10-21 已通过 Chrome 实际完成公开站创建、8步模拟、通知去重、规则v2与刷新持久化检查，见 [公开Web验收](docs/validation/public_web_2026-10-21.md)。这属于人工主链路验收，不是自动化全量回归。
+
+公开仓库：https://github.com/1328lct/investment-x-buddy 。源码为手动导出同步，未建立Lovable双向自动同步。
+
+演示MP4为70.6秒、3,126,021字节。提交包包含本地文件；也可从 [仓库视频](https://github.com/1328lct/investment-x-buddy/blob/main/public/demo/AlphaRadar_demo.mp4) 下载。公开站视频路径未通过Chrome播放验证，不应只提交该路径。

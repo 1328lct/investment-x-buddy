@@ -50,3 +50,12 @@
 ## 3. 数据真实性声明
 
 所有数值来自 `buildSnapshot()` 合成：在阈值附近按种子偏移，生成「满足 / 不满足」值。它们**不是、也不近似**任何真实价格或热度。每个数据点都带有 `source: "DEMO-SIM-*"` 和 `demo: true`，界面显示「DEMO 数据·非实时」。
+
+
+## 补充：公开 Web 与最终交付
+
+2026-10-21 已通过 Chrome 实际完成公开站创建、8步模拟、通知去重、规则v2与刷新持久化检查，见 [公开Web验收](docs/validation/public_web_2026-10-21.md)。这属于人工主链路验收，不是自动化全量回归。
+
+公开仓库：https://github.com/1328lct/investment-x-buddy 。源码为手动导出同步，未建立Lovable双向自动同步。
+
+演示MP4为70.6秒、3,126,021字节。提交包包含本地文件；也可从 [仓库视频](https://github.com/1328lct/investment-x-buddy/blob/main/public/demo/AlphaRadar_demo.mp4) 下载。公开站视频路径未通过Chrome播放验证，不应只提交该路径。

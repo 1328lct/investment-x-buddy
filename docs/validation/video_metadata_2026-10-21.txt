@@ -1,0 +1,10 @@
+# AlphaRadar_demo.mp4 元数据（2026-10-21 录制）
+
+format_name=mov,mp4,m4a,3gp,3g2,mj2
+duration=70.600000
+size=3126021
+
+bytes=3126021
+sha256=0340f4cd447e0a25c059efc74c43ba2445f14a4c23e3abd47b8c8344079c2e95
+path=public/demo/AlphaRadar_demo.mp4
+url_path=/demo/AlphaRadar_demo.mp4

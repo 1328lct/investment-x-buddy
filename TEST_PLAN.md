@@ -79,7 +79,7 @@
 
 `scripts/acceptance_e2e.py`（Playwright，需本地开发服务运行于 8080）。**注意：该脚本打印各项数量（count），不含 assert 断言**；「通过」指人工核对输出与期望值一致（如 `notifs_for_v1e1=1`、`notifs_v1e2=0`、`errs=[]`）。
 
-最近一次结果（2026-10-21 03:40 UTC，原始输出见 `docs/validation/e2e_2026-10-21.log`）：
+最近一次结果（2026-10-21 03:40 UTC，原始输出见 `docs/validation/e2e_2026-10-21.txt`）：
 
 | 检查 | 期望输出 | 本次输出 | 结果 |
 |---|---|---|---|
@@ -96,3 +96,12 @@
 | 手机宽度 390px 截图人工检查 | 布局正常 | 正常（2026-10-20 截图） | 通过 |
 
 2026-10-21 复验构建：生产构建 build OK（平台日志 03:41:15Z）；类型检查 `npx tsgo --noEmit` 无错误；`bunx vitest run` 16/16 通过。历史记录（2026-10-20 首轮）与本次结果区分见 [VALIDATION_2026-10-21.md](./VALIDATION_2026-10-21.md)。
+
+
+## 补充：公开 Web 与最终交付
+
+2026-10-21 已通过 Chrome 实际完成公开站创建、8步模拟、通知去重、规则v2与刷新持久化检查，见 [公开Web验收](docs/validation/public_web_2026-10-21.md)。这属于人工主链路验收，不是自动化全量回归。
+
+公开仓库：https://github.com/1328lct/investment-x-buddy 。源码为手动导出同步，未建立Lovable双向自动同步。
+
+演示MP4为70.6秒、3,126,021字节。提交包包含本地文件；也可从 [仓库视频](https://github.com/1328lct/investment-x-buddy/blob/main/public/demo/AlphaRadar_demo.mp4) 下载。公开站视频路径未通过Chrome播放验证，不应只提交该路径。

@@ -1,0 +1,5 @@
+# python3 scripts/acceptance_e2e.py — 2026-10-21T03:40:51Z
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+{'sim_runs': 1, 'notifs_for_v1e1': 1, 'notifs_v1e2': 0, 'v2_current': 1, 'paused': 1, 'persist_after_reload': 1, 'validation_err': 1, 'sched_stopped': 1, 'corrupt_recovered_cards': 1}
+errs []
+exit=0
