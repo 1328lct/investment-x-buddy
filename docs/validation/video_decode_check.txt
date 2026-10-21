@@ -1,0 +1,8 @@
+command: ffmpeg -v error -i public/demo/AlphaRadar_demo.mp4 -f null -
+exit_code: 0
+stderr: (empty)
+
+来源：Lovable 项目提交313f9024c782b2ee840432768db08f2283da4b7c中的实际解码日志。
+视频：H.264 High / Level 5.0，yuv420p，1280×1800，25fps，70.6秒。
+校验：本机导出MP4的SHA256与原始视频一致。
+限制：本机Chrome公开URL预览和AVFoundation解码未成功；全片ffmpeg解码已成功。不能声称已在所有本机播放器上通过；可下载后使用兼容H.264 High Level5的播放器。联系表视觉复核未完成。
